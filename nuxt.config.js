@@ -17,6 +17,7 @@ export default {
       { rel: "stylesheet", href: "https://use.fontawesome.com/releases/v5.0.6/css/all.css" }
     ],
     script: [
+      { src: "https://platform.linkedin.com/badges/js/profile.js" },
       { src: "js/core/jquery.min.js" },
       { src: "js/core/popper.min.js" },
       { src: "js/core/bootstrap.min.js" },
