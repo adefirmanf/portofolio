@@ -1,12 +1,33 @@
 <template>
-  <Profile></Profile>
+<client-only>
+  <body class="profile-page">
+    <Navbar></Navbar>
+    <div class="container">
+      <div class="squares square-1"></div>
+      <div class="squares square-3"></div>
+      <div class="squares square-4"></div>
+      <MyBackground></MyBackground>
+      <!-- Projects !-->
+      <MyProject></MyProject>
+      <!-- Experience !-->
+      <MyExperience></MyExperience>
+    </div>
+  </body>
+</client-only>
 </template>
 
 <script>
-import Profile from "~/components/Profile.vue";
+import Navbar from "~/components/Navbar.vue";
+import MyBackground from "~/components/MyBackgroud.vue";
+import MyProject from "~/components/Project";
+import MyExperience from "~/components/Experience.vue";
+
 export default {
   components: {
-    Profile
+    Navbar,
+    MyBackground,
+    MyProject,
+    MyExperience
   }
 };
 </script>

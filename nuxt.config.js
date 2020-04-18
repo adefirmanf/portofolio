@@ -44,6 +44,7 @@ export default {
     { src: '~/assets/css/blk-design-system.min.css' },
     { src: '~/assets/css/nucleo-icons.css' },
     { src: '~/assets/demo/demo.css' },
+    { src: '~/assets/css/custom.css' },
   ],
 
   /*
