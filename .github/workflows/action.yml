@@ -33,12 +33,10 @@ jobs:
     - name: Push to adefirmanf.github.io
       uses: peaceiris/actions-gh-pages@v3.5.7
       with: 
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./dist
-      env:
-        PUBLISH_BRANCH: master
-        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-        GITHUB_REPOSITORY: <username>/<username>.github.io
+        publish_branch: master
+        external_repository: adefirmanf/adefirmanf.github.io
 
     - name: Docker build 
       run: docker build -t docker.pkg.github.com/adefirmanf/portofolio/adefirmanf:latest .
