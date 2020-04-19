@@ -35,7 +35,8 @@ jobs:
       with: 
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./dist
-        
+        GITHUB_REPOSITORY: <username>/<username>.github.io
+
     - name: Docker build 
       run: docker build -t docker.pkg.github.com/adefirmanf/portofolio/me.adefirmanf.dev:latest .
 
