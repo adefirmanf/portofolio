@@ -24,6 +24,12 @@ jobs:
     - name: Install dependencies
       run: npm install 
 
+    - name: Build static file
+      run: npm run build
+
+    - name: Generate static file
+      run: npm run generate
+    
     - name: Push to adefirmanf.github.io
       run: npm run gh-deploy
 
