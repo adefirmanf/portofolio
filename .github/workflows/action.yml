@@ -43,4 +43,4 @@ jobs:
     - name: Docker push 
       run: |
         docker login docker.pkg.github.com -u ${{github.actor}} -p ${{secrets.GITHUB_TOKEN}}
-        docker push docker.pkg.github.com/adefirmanf/portofolio/me.adfirmanf.dev:latest
+        docker push docker.pkg.github.com/adefirmanf/portofolio/adefirmanf:latest
