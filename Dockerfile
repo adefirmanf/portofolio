@@ -5,6 +5,7 @@ RUN npm install --only=production
 ENV NODE_ENV production
 ENV NUXT_HOST 0.0.0.0
 ENV NUXT_PORT 3000
+ENV DEPLOY_ENV GH_PAGES
 COPY . /app
 RUN npm build 
 EXPOSE 3000

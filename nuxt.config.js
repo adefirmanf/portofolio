@@ -1,6 +1,9 @@
 
 export default {
   mode: 'spa',
+  router: {
+    base: "/<repository-name>/"
+  },
   /*
   ** Headers of the page
   */

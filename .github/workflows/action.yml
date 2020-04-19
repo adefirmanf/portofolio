@@ -25,10 +25,10 @@ jobs:
       run: npm install 
 
     - name: Build static file
-      run: npm run build
+      run: npm run build:gh-pages
 
     - name: Generate static file
-      run: npm run generate
+      run: npm run generate:gh-pages
     
     - name: Push to adefirmanf.github.io
       uses: peaceiris/actions-gh-pages@v3.5.7
