@@ -31,8 +31,11 @@ jobs:
       run: npm run generate
     
     - name: Push to adefirmanf.github.io
-      run: npm run gh-deploy
-
+      uses: peaceiris/actions-gh-pages@v3.5.7
+      with: 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./dist
+        
     - name: Docker build 
       run: docker build -t docker.pkg.github.com/adefirmanf/portofolio/me.adefirmanf.dev:latest .
 
