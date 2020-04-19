@@ -12,6 +12,7 @@
       <!-- Experience !-->
       <MyExperience></MyExperience>
     </div>
+    <Footer></Footer>
   </body>
 </client-only>
 </template>
@@ -21,13 +22,15 @@ import Navbar from "~/components/Navbar.vue";
 import MyBackground from "~/components/MyBackgroud.vue";
 import MyProject from "~/components/Project";
 import MyExperience from "~/components/Experience.vue";
+import Footer from "~/components/Footer.vue";
 
 export default {
   components: {
     Navbar,
     MyBackground,
     MyProject,
-    MyExperience
+    MyExperience,
+    Footer
   }
 };
 </script>
